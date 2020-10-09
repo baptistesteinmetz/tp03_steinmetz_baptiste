@@ -9,6 +9,7 @@
 
 # dependencies
 /node_modules
+/e2e
 
 # profiling files
 chrome-profiler-events*.json
@@ -32,6 +33,7 @@ speed-measure-plugin*.json
 .history/*
 /.vs/*
 /e2e/*
+
 # misc
 /.sass-cache
 /connect.lock
@@ -46,3 +48,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
+.browserslistrc
+.editorconfig
