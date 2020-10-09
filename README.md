@@ -6,5 +6,4 @@ pour récupérer les produits
 - Créer un composant permettant d’afficher la liste des produits
 - Créer un composant moteur de recherche permettant de filtrer les produits suivants
 plusieurs critères
-# Bonus adapter la page formulaire de création de compte client en se basant sur les
-Réactive Forms
+# Bonus adapter la page formulaire de création de compte client en se basant sur les Réactive Forms
