@@ -1,0 +1,13 @@
+{
+  "products":[
+    {
+      "name":"Jouet 1", "price":12.5, "src":"blabla.jpg"
+    },
+    {
+      "name":"Jouet 2", "price":12.5, "src":"blabla.jpg"
+    },
+    {
+      "name":"Jouet 3", "price":12.5, "src":"blabla.jpg"
+    }
+  ]
+}
