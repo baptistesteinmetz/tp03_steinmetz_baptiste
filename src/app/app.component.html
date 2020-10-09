@@ -1,12 +1,24 @@
-
+<nav>
+  <span>Liste des TPs WEB:</span>
+  <ul>
+    <li routerLinkActive="active">
+      <a routerLink="tp02">TP02</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="tp03">TP03</a>
+    </li>
+  </ul>
+</nav>
 <div id="main">
-  <app-form id="component-form">
-  </app-form>
+
+  <router-outlet></router-outlet>
+  <!-- <app-form >
+  </app-form> -->
 <!-- <button class="btn btn-succes"
   [disabled]="!isAuth"
   (click)="onAllumer()" > tout allumer</button> -->
 
 </div>
 
-<app-product-list></app-product-list>
-<app-search-bar></app-search-bar>
+<!-- <app-product-list></app-product-list> -->
+

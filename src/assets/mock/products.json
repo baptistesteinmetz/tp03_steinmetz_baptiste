@@ -1,13 +1,11 @@
-{
-  "products":[
-    {
-      "name":"Jouet 1", "price":12.5, "src":"blabla.jpg"
-    },
-    {
-      "name":"Jouet 2", "price":12.5, "src":"blabla.jpg"
-    },
-    {
-      "name":"Jouet 3", "price":12.5, "src":"blabla.jpg"
-    }
-  ]
-}
+[
+  {
+    "name":"FIFA21", "price":52.99, "src":"fifa21.jpg", "description":"It's FIFA... Like always.", "backgroundLight":"#42A5F5", "backgroundDark":"#1565C0"
+  },
+  {
+    "name":"Crash Bandicoot 4 : It's About Time", "price":51.69, "src":"crash4.jpg", "description":"Our favorite Bandicoot is (supposed to be) back! He's not here on time, where the hell is he?", "backgroundLight":"#26C6DA", "backgroundDark":"#00838F"
+  },
+  {
+    "name":"Marvel's Spider-Man", "price":26.99, "src":"spiderman.jpg", "description":"Spider-Man, Spider-Man, slinging through New-York on his webs", "backgroundLight":"#FFA726", "backgroundDark":"#EF6C00"
+  }
+]

@@ -13,8 +13,10 @@ import { User } from '../User';
 
 @Component({
   selector: 'app-form',
+  // class:'component-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  styleUrls: ['./form.component.scss'],
+  host: {'id':'component-form'},
 })
 
 

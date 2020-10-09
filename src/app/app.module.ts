@@ -12,6 +12,13 @@ import { RecapComponent, PhonePipe, CodePipe } from './recap/recap.component';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { ProductListComponent } from './product-list/product-list.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: 'tp02', component: FormComponent },
+  { path: 'tp03', component: ProductListComponent },
+  { path: '', component: FormComponent }
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +37,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [GetProductsService],
   bootstrap: [AppComponent]

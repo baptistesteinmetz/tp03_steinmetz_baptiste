@@ -1,3 +1,7 @@
+import { GetProductsService } from './../get-products.service';
+import { Observable } from 'rxjs';
+import { ProductListComponent } from './../product-list/product-list.component';
+import { Product } from './../../models/products';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +11,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
-  constructor() { }
+  products: Observable<Product[]>;
+
+  constructor(private getProducts: GetProductsService) { }
 
   ngOnInit(): void {
+    this.products = this.getProducts.getData();
   }
 
 }

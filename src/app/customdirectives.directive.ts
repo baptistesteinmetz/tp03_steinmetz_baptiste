@@ -15,11 +15,6 @@ export class ErrorInputDirective {
               private el: ElementRef) {}
 
   @Input() set ccErrorInput(condition: boolean){
-    // console.log(this.templateRef.elementRef);
-    // console.log(this.viewContainer);
-    // console.log(this.renderer);
-    console.log(this.renderer);
-    // const element = this.el.parentElement;
     if (!condition){
       this.viewContainer.createEmbeddedView(this.templateRef);
     }

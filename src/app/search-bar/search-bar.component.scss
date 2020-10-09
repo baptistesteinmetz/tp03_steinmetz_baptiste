@@ -1,0 +1,20 @@
+#search-bar {
+  width:80%;
+  border: 2px solid #b9adad;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 0.25rem;
+  min-width: 125px;
+  padding: 0.5rem;
+  transition: border-color 0.5s ease-out;
+
+  &:hover {
+    border: 2px solid #4d4848;
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
