@@ -1,6 +1,6 @@
-import { GetProductsService } from './../get-products.service';
+import { ProductService } from './../get-products.service';
 import { Product } from './../../models/products';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { from } from 'rxjs';
 import { filter } from 'rxjs/operators';
@@ -13,16 +13,30 @@ import { filter } from 'rxjs/operators';
 export class ProductListComponent implements OnInit {
 
   products: Observable<Product[]>;
+  productSubscription: Subscription;
 
-  constructor(private getProductsService: GetProductsService) { }
+  loaded : boolean = false;
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    this.products = this.getProductsService.getData();
-    this.products.subscribe((products) => {
-      products.forEach(product => {
-        console.log(product);
-      });
-    });
+    this.products = this.productService.getData();
+    setTimeout(() => {
+      this.loaded = true;
+    }, 1000);
+    this.productSubscription = this.products.subscribe(
+      (products) => {
+        this.products.forEach(product => {
+          console.log(product);
+        });
+      }
+    );
+
+    // console.log(this.products);
+    // console.log(this.productSubscription);
+  }
+
+  fliterProducts(): void {
+    // this.getProductsService.getData().subscribe(message => {this.message = message;});
   }
 
 }

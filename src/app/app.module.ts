@@ -2,7 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ErrorInputDirective } from './customdirectives.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, } from '@angular/core';
-import { GetProductsService } from './get-products.service';
+import { ProductService } from './get-products.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -39,7 +39,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [GetProductsService],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
