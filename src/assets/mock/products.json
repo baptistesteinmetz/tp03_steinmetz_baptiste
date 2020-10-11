@@ -7,5 +7,23 @@
   },
   {
     "name":"Marvel's Spider-Man", "price":26.99, "src":"spiderman.jpg", "description":"Spider-Man, Spider-Man, slinging through New-York on his webs", "backgroundLight":"#FFA726", "backgroundDark":"#EF6C00"
+  },
+  {
+    "name":"Last Of Us - Part II", "price":48.86, "src":"lastofus2.jpg", "description":"Five years later… An intense, harrowing and emotional adventure awaits Ellie and Joel.", "backgroundLight":"#FF7043", "backgroundDark":"#D84315"
+  },
+  {
+    "name":"Ghost of Tsushima", "price":59.99, "src":"ghost.jpg", "description":"The Rise of the Ghost: in his quest to reclaim tsushima, Jin must seek support from old friends and new unlikely allies.", "backgroundLight":"#9CCC65", "backgroundDark":"#689F38"
+  },
+  {
+    "name":"FINAL FANTASY VII REMAKE", "price":23.97, "src":"ff7.jpg", "description":"FINAL FANTASY VII REMAKE features a hybrid battle system that merges real-time action with strategic, command-based combat.", "backgroundLight":"#EC407A", "backgroundDark":"#AD1457"
+  },
+  {
+    "name":"Kingdom Hearts 3", "price":9.99, "src":"kh3.jpg", "description":"Travel across Disney and Pixar worlds to protect them from the Heartless invasion, and befriend and join heroes from Toy Story, Monsters Inc., Big Hero 6, Tangled, Hercules, and more.", "backgroundLight":"#26A69A", "backgroundDark":"#00695C"
+  },
+  {
+    "name":"Red Dead Redemption 2", "price":21, "src":"reddead.jpg", "description":"Play as Arthur Morgan, lead enforcer in the notorious Van der Linde gang.", "backgroundLight":"#E0E0E0", "backgroundDark":"#757575"
+  },
+  {
+    "name":"Uncharted 4: A Thief's End", "price":14.86, "src":"uncharted4.jpg", "description":"Embark on Nathan Drake's greatest adventure in a globe-trotting journey in pursuit of a historical conspiracy behind a fabled pirate treasure;", "backgroundLight":"#78909C", "backgroundDark":"#455A64"
   }
 ]

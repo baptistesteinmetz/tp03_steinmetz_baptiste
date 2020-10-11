@@ -2,10 +2,10 @@
 
 <div >
   <div *ngIf="!loaded" >Loading products!</div>
-  <div *ngIf="loaded" id="product-list" >
-    <div (mouseover)="hover=true" (mouseleave)="hover=false" *ngFor="let item of products | async" class="product" >
+  <div *ngIf="loaded" id="product-list" [ngClass]="{'product-list-display': loaded }">
+    <div (mouseover)="hover=true" (mouseleave)="hover=false" *ngFor="let item of products | async" class="product"  >
       <div class="product-header">
-        <p class="product-header-title" [style.background]="item.backgroundLight">{{item.name}} - {{item.price}}€</p>
+        <p class="product-header-title" [style.background]="item.backgroundLight">{{item.name}} -  <b class="product-price">{{item.price}}€</b></p>
         <div class="product-header-img">
           <img class="product-img" src="../../assets/img/{{item.src}}"/>
 

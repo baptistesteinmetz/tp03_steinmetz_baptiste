@@ -22,7 +22,7 @@ export class ProductListComponent implements OnInit {
     this.products = this.productService.getData();
     setTimeout(() => {
       this.loaded = true;
-    }, 1000);
+    }, 3000);
     this.productSubscription = this.products.subscribe(
       (products) => {
         this.products.forEach(product => {

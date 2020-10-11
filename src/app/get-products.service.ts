@@ -31,7 +31,7 @@ export class ProductService {
   }
 
   filterProducts(term: string): Observable<Product[]> {
-    console.log("here");
+    console.log(term);
     this.products = this.http.get<Product[]>(environment.baseUrl).pipe(
       map(res => res.filter((res) => res.name === term)
     ))
