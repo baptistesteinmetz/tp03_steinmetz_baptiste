@@ -7,39 +7,12 @@ import { Observable, of, ReplaySubject, Subject } from 'rxjs';
 import { environment } from '../environments/environment';
 import { catchError, tap, map, filter} from 'rxjs/operators';
 @Injectable(
-  // {
-  // providedIn: 'root'
-  // }
+  {
+  providedIn: 'root'
+  }
 )
 export class ProductService {
-  // public products: Observable<Product>;
-
-  // private productsChanged = new EventEmitter<Product>();
-
-  constructor(private http: HttpClient) {
-  //   this.getData().subscribe((res:any) => {
-  //     this.products = res;
-  //   }, err => {
-  //     console.log(err);
-  //   });
-   }
-
-  // public getData(): Observable<Product> {
-  //   this.products = this.http.get<Product>(environment.baseUrl);
-  //   return this.products;
-  // }
-
-  // filterProducts(term: string) {
-  //   console.log(term);
-
-  //   return this.products;
-  //   // this.products.forEach(product => console.log(product));
-  //   // this.productsChanged.emit();
-  // }
-
-  // searchProducts(): Observable<Product[]> {
-
-  // }
+  constructor(private http: HttpClient) { }
 
   private products: Product[];
   private filteredProducts$: Subject<Product[]> = new ReplaySubject<Product[]>(1);
