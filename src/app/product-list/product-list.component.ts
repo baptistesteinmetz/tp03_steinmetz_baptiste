@@ -12,31 +12,15 @@ import { filter } from 'rxjs/operators';
 })
 export class ProductListComponent implements OnInit {
 
-  products: Observable<Product[]>;
+  products: Observable<Product[]> = this.productService.getSearchResults();
   productSubscription: Subscription;
 
   loaded : boolean = false;
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    this.products = this.productService.getData();
     setTimeout(() => {
       this.loaded = true;
     }, 3000);
-    this.productSubscription = this.products.subscribe(
-      (products) => {
-        this.products.forEach(product => {
-          console.log(product);
-        });
-      }
-    );
-
-    // console.log(this.products);
-    // console.log(this.productSubscription);
   }
-
-  fliterProducts(): void {
-    // this.getProductsService.getData().subscribe(message => {this.message = message;});
-  }
-
 }

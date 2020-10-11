@@ -3,7 +3,18 @@
   height:100%;
   margin:20px;
 }
+.product-loading {
+  margin: 50px 0;
+  height: 10em;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 
+  span {
+    font-size: 70px;
+    color: #4ca2b1;
+  }
+}
 #product-list {
   display:flex;
   transition: all 1s ease-in;
